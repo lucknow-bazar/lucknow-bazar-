@@ -4,40 +4,89 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="google-site-verification" content="6F5UntuguSBT8erOUYjKJJ-1I0XRt0-qLeTjPBo1kiw" />
+<title>Lucknow Bazar - Live Result</title>
 
-<title>lucknow bazar</title>
+<meta name="description" content="Lucknow Bazar Live Result, Chart Record, Premium Market Updates">
+<meta name="keywords" content="Lucknow Bazar, Live Result, Chart Record, Market Result">
 
 <style>
-body{
+
+*{
     margin:0;
-    font-family:Arial,sans-serif;
-    background:#f2f2f2;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e293b,#312e81);
+    min-height:100vh;
+    color:white;
+    overflow-x:hidden;
 }
 
 .header{
-    background:#d40000;
-    color:white;
     text-align:center;
-    padding:15px;
-    font-size:30px;
+    padding:25px 15px;
+}
+
+.logo{
+    font-size:50px;
     font-weight:bold;
+    background:linear-gradient(90deg,#00ffff,#ff00ff,#ffff00);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.subtitle{
+    color:#cbd5e1;
+    margin-top:8px;
 }
 
 .live{
-    background:#fff;
-    color:red;
+    text-align:center;
     font-size:22px;
-    padding:10px;
+    font-weight:bold;
+    color:#ff4d4d;
+    margin:10px 0 25px;
+    animation:blink 1s infinite;
+}
+
+@keyframes blink{
+    50%{
+        opacity:0.4;
+    }
+}
+
+.counter-box{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.counter{
+    font-size:34px;
+    color:#00ffff;
     font-weight:bold;
 }
 
+.container{
+    width:95%;
+    max-width:900px;
+    margin:auto;
+}
+
 .result-box{
-    background:white;
-    margin:10px;
-    padding:15px;
-    border-radius:8px;
-    box-shadow:0 2px 5px rgba(0,0,0,0.2);
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(12px);
+    border-radius:18px;
+    padding:18px;
+    margin-bottom:18px;
+    box-shadow:0 0 20px rgba(0,255,255,0.15);
+    transition:.3s;
+}
+
+.result-box:hover{
+    transform:translateY(-4px);
 }
 
 .row{
@@ -47,72 +96,140 @@ body{
 }
 
 .market{
-    font-size:28px;
-    font-weight:bold;
-}
-
-.number{
-    font-size:42px;
-    color:#000;
+    font-size:24px;
     font-weight:bold;
 }
 
 .time{
-    color:#666;
-    margin-top:5px;
+    margin-top:6px;
+    color:#d1d5db;
+}
+
+.number{
+    font-size:50px;
+    font-weight:bold;
+    color:#00ffff;
+    text-shadow:0 0 15px #00ffff;
+}
+
+.btn-area{
+    text-align:center;
+    margin:35px 0;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    color:white;
+    padding:16px 35px;
+    border-radius:50px;
+    font-size:20px;
+    font-weight:bold;
+    background:linear-gradient(90deg,#ff0080,#7928ca,#00d4ff);
+    transition:.4s;
+}
+
+.btn:hover{
+    transform:scale(1.08);
+    box-shadow:0 0 25px #00ffff;
 }
 
 .footer{
     text-align:center;
-    padding:20px;
-    color:#555;
+    padding:25px;
+    color:#cbd5e1;
 }
+
+@media(max-width:600px){
+
+.logo{
+    font-size:36px;
+}
+
+.market{
+    font-size:18px;
+}
+
+.number{
+    font-size:36px;
+}
+
+.counter{
+    font-size:28px;
+}
+
+}
+
 </style>
 </head>
 
 <body>
 
 <div class="header">
-lucknow bazar 
+    <div class="logo">LUCKNOW BAZAR</div>
+    <div class="subtitle">Premium Live Market Result</div>
 </div>
 
-<div class="live">
-🔴 LIVE RESULT
+<div class="live">🔴 LIVE RESULT</div>
+
+<div class="counter-box">
+    <div class="counter">
+        Visitors : <span id="count">1000</span>
+    </div>
 </div>
 
-<div class="result-box">
-<div class="row">
-<div>
-<div class="market">lucknow CITY</div>
-<div class="time">Updated: 06:00 PM</div>
-</div>
-<div class="number">45</div>
-</div>
+<div class="container">
+
+    <div class="result-box">
+        <div class="row">
+            <div>
+                <div class="market">LUCKNOW CITY</div>
+                <div class="time">Updated : 06:00 PM</div>
+            </div>
+            <div class="number">45</div>
+        </div>
+    </div>
+
+    <div class="result-box">
+        <div class="row">
+            <div>
+                <div class="market">LUCKNOW KING</div>
+                <div class="time">Updated : 06:15 PM</div>
+            </div>
+            <div class="number">72</div>
+        </div>
+    </div>
+
+    <div class="result-box">
+        <div class="row">
+            <div>
+                <div class="market">DELHI BAZAR</div>
+                <div class="time">Updated : 06:30 PM</div>
+            </div>
+            <div class="number">18</div>
+        </div>
+    </div>
+
 </div>
 
-<div class="result-box">
-<div class="row">
-<div>
-<div class="market">LUCKNOW KING</div>
-<div class="time">Updated: 06:15 PM</div>
-</div>
-<div class="number">72</div>
-</div>
-</div>
-
-<div class="result-box">
-<div class="row">
-<div>
-<div class="market">DELHI BAZAR</div>
-<div class="time">Updated: 06:30 PM</div>
-</div>
-<div class="number">18</div>
-</div>
+<div class="btn-area">
+    <a href="#" class="btn">📊 Chart Record Premium</a>
 </div>
 
 <div class="footer">
-© 2026 Kanpur Times
+    © 2026 Lucknow Bazar | All Rights Reserved
 </div>
+
+<script>
+
+let count = 1000;
+
+setInterval(() => {
+    count++;
+    document.getElementById("count").innerText = count;
+}, 1000);
+
+</script>
 
 </body>
 </html>
