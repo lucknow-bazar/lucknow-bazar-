@@ -266,30 +266,19 @@ background:gold;
 border-radius:20px;
 }
 
-/* HERO SECTION */
 .hero{
 height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
 flex-direction:column;
-background:
+background:#000;
 position:relative;
 overflow:hidden;
 }
 
 /* floating cinematic lights */
-.hero::before{
-content:'';
-position:absolute;
-width:300px;
-height:300px;
-background:rgba(255,0,0,0.12);
-filter:blur(120px);
-top:-50px;
-left:-80px;
-animation: moveLight 8s infinite alternate;
-}
+
 
 
 @keyframes moveLight{
