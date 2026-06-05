@@ -264,64 +264,199 @@ background:linear-gradient(90deg,#ffd700,#ffb300,#cc8400);
 -webkit-text-fill-color:transparent;
 letter-spacing:4px;
 ">
-LUCKNOW BAZAR 2026
-</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lucknow Gali Chart</title>
 
-<h2 style="
-color:white;
-text-align:left;
-margin-bottom:20px;
-">
-DATE
-</h2>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-<div style="
-font-size:24px;
-font-weight:bold;
-line-height:2.2;
-text-align:left;
-color:white;
-">
+html,body{
+    width:100%;
+    overflow-x:hidden;
+    background:black;
+    font-family:Arial,sans-serif;
+}
 
-01 │45 _______________________________<br>
-02 │ _______________________________<br>
-03 │ _______________________________<br>
-04 │ _______________________________<br>
-05 │ _______________________________<br>
-06 │ _______________________________<br>
-07 │ _______________________________<br>
-08 │ _______________________________<br>
-09 │ _______________________________<br>
-10 │ _______________________________<br>
-11 │ _______________________________<br>
-12 │ _______________________________<br>
-13 │ _______________________________<br>
-14 │ _______________________________<br>
-15 │ _______________________________<br>
-16 │ _______________________________<br>
-17 │ _______________________________<br>
-18 │ _______________________________<br>
-19 │ _______________________________<br>
-20 │ _______________________________<br>
-21 │ _______________________________<br>
-22 │ _______________________________<br>
-23 │ _______________________________<br>
-24 │ _______________________________<br>
-25 │ _______________________________<br>
-26 │ _______________________________<br>
-27 │ _______________________________<br>
-28 │ _______________________________<br>
-29 │ _______________________________<br>
-30 │ _______________________________<br>
-31 │ _______________________________<br>
+/* Main Container */
+.container{
+    width:100%;
+    min-height:100vh;
+    background:black;
+    padding:20px 12px;
+}
+
+/* Animated Heading */
+.title{
+    text-align:center;
+    font-size:42px;
+    font-weight:bold;
+    margin-bottom:30px;
+    text-transform:uppercase;
+    animation: glowText 4s infinite alternate;
+    letter-spacing:3px;
+}
+
+/* Cinematic lighting effect */
+@keyframes glowText{
+    0%{
+        color:#ff0000;
+        text-shadow:
+        0 0 10px red,
+        0 0 20px red,
+        0 0 40px crimson;
+    }
+    25%{
+        color:#00ffff;
+        text-shadow:
+        0 0 10px cyan,
+        0 0 20px cyan,
+        0 0 40px blue;
+    }
+    50%{
+        color:#ff00ff;
+        text-shadow:
+        0 0 10px magenta,
+        0 0 20px magenta,
+        0 0 40px purple;
+    }
+    75%{
+        color:#ffff00;
+        text-shadow:
+        0 0 10px yellow,
+        0 0 20px orange,
+        0 0 40px gold;
+    }
+    100%{
+        color:#ff3300;
+        text-shadow:
+        0 0 10px red,
+        0 0 20px orange,
+        0 0 40px darkred;
+    }
+}
+
+/* DATE Heading */
+.date-heading{
+    color:white;
+    font-size:28px;
+    margin-bottom:20px;
+    font-weight:bold;
+}
+
+/* Chart Box */
+.chart-box{
+    width:100%;
+    border:2px solid white;
+    border-radius:16px;
+    overflow:hidden;
+    background:#111;
+}
+
+/* Rows */
+.row{
+    display:flex;
+    align-items:center;
+    min-height:75px;
+    border-bottom:1px solid rgba(255,255,255,0.3);
+    padding:0 20px;
+}
+
+.row:last-child{
+    border-bottom:none;
+}
+
+/* Date Number */
+.date{
+    color:red;
+    font-size:34px;
+    font-weight:bold;
+    text-shadow:
+    0 0 10px red,
+    0 0 20px crimson,
+    0 0 35px darkred;
+}
+
+/* White Divider */
+.line{
+    width:2px;
+    height:45px;
+    background:white;
+    margin-left:18px;
+}
+
+/* Mobile Responsive */
+@media(max-width:480px){
+    .title{
+        font-size:34px;
+    }
+
+    .date{
+        font-size:30px;
+    }
+
+    .row{
+        min-height:70px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1 class="title">Lucknow Gali</h1>
+
+    <div class="date-heading">DATE</div>
+
+    <div class="chart-box">
+
+        <div class="row"><div class="date">01</div><div class="line"></div></div>
+        <div class="row"><div class="date">02</div><div class="line"></div></div>
+        <div class="row"><div class="date">03</div><div class="line"></div></div>
+        <div class="row"><div class="date">04</div><div class="line"></div></div>
+        <div class="row"><div class="date">05</div><div class="line"></div></div>
+        <div class="row"><div class="date">06</div><div class="line"></div></div>
+        <div class="row"><div class="date">07</div><div class="line"></div></div>
+        <div class="row"><div class="date">08</div><div class="line"></div></div>
+        <div class="row"><div class="date">09</div><div class="line"></div></div>
+        <div class="row"><div class="date">10</div><div class="line"></div></div>
+        <div class="row"><div class="date">11</div><div class="line"></div></div>
+        <div class="row"><div class="date">12</div><div class="line"></div></div>
+        <div class="row"><div class="date">13</div><div class="line"></div></div>
+        <div class="row"><div class="date">14</div><div class="line"></div></div>
+        <div class="row"><div class="date">15</div><div class="line"></div></div>
+        <div class="row"><div class="date">16</div><div class="line"></div></div>
+        <div class="row"><div class="date">17</div><div class="line"></div></div>
+        <div class="row"><div class="date">18</div><div class="line"></div></div>
+        <div class="row"><div class="date">19</div><div class="line"></div></div>
+        <div class="row"><div class="date">20</div><div class="line"></div></div>
+        <div class="row"><div class="date">21</div><div class="line"></div></div>
+        <div class="row"><div class="date">22</div><div class="line"></div></div>
+        <div class="row"><div class="date">23</div><div class="line"></div></div>
+        <div class="row"><div class="date">24</div><div class="line"></div></div>
+        <div class="row"><div class="date">25</div><div class="line"></div></div>
+        <div class="row"><div class="date">26</div><div class="line"></div></div>
+        <div class="row"><div class="date">27</div><div class="line"></div></div>
+        <div class="row"><div class="date">28</div><div class="line"></div></div>
+        <div class="row"><div class="date">29</div><div class="line"></div></div>
+        <div class="row"><div class="date">30</div><div class="line"></div></div>
+        <div class="row"><div class="date">31</div><div class="line"></div></div>
+
+    </div>
 
 </div>
 
-</section>
-
-</div>
-
-</section>
+</body>
+</html>
 
 </section>
 <div class="footer">
