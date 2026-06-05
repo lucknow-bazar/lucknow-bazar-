@@ -519,9 +519,11 @@ document.write(`
 <div class="row">
 <div class="date">${String(i).padStart(2,'0')}</div>
 <div class="line"></div>
-<input type="text" maxlength="2"
-class="number-box"
-placeholder="00">
+<input 
+type="tel"
+inputmode="numeric"
+maxlength="2"
+class="number-box">
 </div>
 `)
 }
