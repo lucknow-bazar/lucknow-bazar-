@@ -228,270 +228,10 @@ box-shadow:
 animation: glow 3s ease infinite;
 ">
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<!-- SECOND PAGE / CHART -->
+<section class="chart-page">
 
-<title>Lucknow Gali </title>
-
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@400;600&display=swap');
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-html,body{
-background:#000;
-font-family:'Poppins',sans-serif;
-overflow-x:hidden !important;
-scroll-behavior:smooth;
-width:100%;
-margin:0;
-padding:0;
-}
-
-/* SCROLLBAR */
-::-webkit-scrollbar{
-width:4px;
-}
-
-::-webkit-scrollbar-thumb{
-background:gold;
-border-radius:20px;
-}
-
-.hero{
-height:100vh;
-min-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-flex-direction:column;
-background:#000;
-position:relative;
-overflow:hidden;
-width:100%;
-text-align:center;
-}
-
-/* floating cinematic lights */
-
-
-
-@keyframes moveLight{
-0%{transform:translateX(0);}
-100%{transform:translateX(100px);}
-}
-
-@keyframes moveLight2{
-0%{transform:translateX(0);}
-100%{transform:translateX(-100px);}
-}
-
-/* CROWN */
-.crown{
-font-size:62px;
-margin-bottom:10px;
-filter:drop-shadow(0 0 15px gold);
-animation: crownGlow 2s infinite alternate;
-z-index:2;
-}
-
-@keyframes crownGlow{
-from{
-transform:scale(1);
-filter:drop-shadow(0 0 10px gold);
-}
-to{
-transform:scale(1.08);
-filter:drop-shadow(0 0 25px gold);
-}
-}
-
-/* TITLE */
-.title{
-font-family:'Cinzel',serif;
-font-size:42px;
-font-weight:700;
-letter-spacing:4px;
-text-transform:uppercase;
-z-index:2;
-text-align:center;
-animation: neonLight 4s infinite linear;
-}
-
-@keyframes neonLight{
-0%{
-color:#ff2a2a;
-text-shadow:
-0 0 6px red,
-0 0 12px red,
-0 0 8px red;
-}
-25%{
-color:#00ffff;
-text-shadow:
-0 0 6px cyan,
-0 0 12px cyan,
-0 0 8px cyan;
-}
-50%{
-color:#ff00ff;
-text-shadow:
-0 0 6px magenta,
-0 0 12px magenta,
-0 0 8px magenta;
-}
-75%{
-color:#ffd700;
-text-shadow:
-0 0 6px gold,
-0 0 12px gold,
-0 0 8px orange;
-}
-100%{
-color:#ff2a2a;
-text-shadow:
-0 0 6px red,
-0 0 12px red,
-0 0 8px red;   
-}
-}
-
-.subtitle{
-margin-top:12px;
-color:#aaa;
-font-size:14px;
-letter-spacing:2px;
-z-index:2;
-}
-
-/* CHART PAGE */
-.chart-page{
-min-height:100vh;
-padding:8px;
-background:#000;
-}
-
-/* Premium Box */
-.chart-wrapper{
-width:calc(100% - 20px);
-margin:0 auto;
-border:2px solid rgba(255,215,0,.5);
-border-radius:25px;
-background:#0a0a0a;
-overflow:hidden;
-box-shadow:none;
-}
-
-/* Date Heading */
-.heading{
-text-align:center;
-padding:18px;
-font-size:30px;
-font-weight:700;
-letter-spacing:4px;
-font-family:'Cinzel',serif;
-color:#ffd700 !important;
-text-shadow:
-0 0 6px gold,
-0 0 12px orange,
-0 0 18px gold !important;
-border-bottom:1px solid rgba(255,215,0,.3);
-text-transform:uppercase;
-    }
-
-/* Row */
-.row{
-display:flex;
-align-items:center;
-gap:12px;
-padding:14px;
-border-bottom:1px solid rgba(255,255,255,.08);
-}
-
-.row:last-child{
-border-bottom:none;
-}
-
-/* Date */
-.date{
-width:58px;
-text-align:center;
-font-size:26px;
-font-weight:bold;
-color:#ff1a1a !important;
-text-shadow:
-0 0 5px red,
-0 0 10px darkred,
-0 0 15px red !important;
-    }
-
-/* Divider */
-.line{
-width:2px;
-height:45px;
-background:linear-gradient(to bottom,gold,white,gold);
-box-shadow:0 0 10px gold;
-}
-
-/* Input Box */
-.number-box{
-flex:1;
-height:52px;
-border-radius:14px;
-border:2px solid rgba(255,255,255,.7);
-background:rgba(255,255,255,.06);
-outline:none;
-color:white;
-font-size:24px;
-padding:10px 15px;
-text-align:center;
-position:relative;
-z-index:999;
-    }
-
-.number-box:focus{
-border-color:gold;
-box-shadow:
-0 0 18px gold,
-inset 0 0 10px rgba(255,215,0,.2);
-}
-
-/* MOBILE */
-@media(max-width:480px){
-
-.title{
-font-size:34px;
-}
-
-.date{
-font-size:22px;
-width:50px;
-}
-
-.number-box{
-height:48px;
-font-size:20px;
-}
-
-.heading{
-font-size:24px;
-}
-}
-</style>
-</head>
-
-<body>
-
-<!-- HERO -->
-<section class="hero">
-
+<div class="hero">
 <div class="crown">👑</div>
 
 <h1 class="title">
@@ -501,11 +241,7 @@ LUCKNOW GALI
 <p class="subtitle">
 PREMIUM CINEMATIC CHART
 </p>
-
-</section>
-
-<!-- CHART -->
-<section class="chart-page">
+</div>
 
 <div class="chart-wrapper">
 
@@ -519,8 +255,7 @@ document.write(`
 <div class="row">
 <div class="date">${String(i).padStart(2,'0')}</div>
 <div class="line"></div>
-<input type="text"
-class="number-box"
+<input type="text" class="number-box">
 </div>
 `)
 }
@@ -529,6 +264,190 @@ class="number-box"
 </div>
 
 </section>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@400;600&display=swap');
+
+.chart-page{
+background:#000;
+min-height:100vh;
+padding:20px 10px;
+overflow:hidden;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+background:#000;
+text-align:center;
+overflow:hidden;
+}
+
+/* CROWN */
+.crown{
+font-size:58px;
+margin-bottom:10px;
+filter:drop-shadow(0 0 10px gold);
+animation:crownGlow 2s infinite alternate;
+}
+
+@keyframes crownGlow{
+from{
+transform:scale(1);
+}
+to{
+transform:scale(1.08);
+filter:drop-shadow(0 0 18px gold);
+}
+}
+
+/* TITLE */
+.title{
+font-family:'Cinzel',serif;
+font-size:42px;
+font-weight:700;
+letter-spacing:4px;
+animation:neonLight 4s linear infinite;
+text-align:center;
+}
+
+/* BALANCED NEON */
+@keyframes neonLight{
+0%{
+color:#ff2a2a;
+text-shadow:
+0 0 4px red,
+0 0 8px red;
+}
+25%{
+color:#00ffff;
+text-shadow:
+0 0 4px cyan,
+0 0 8px cyan;
+}
+50%{
+color:#ff00ff;
+text-shadow:
+0 0 4px magenta,
+0 0 8px magenta;
+}
+75%{
+color:#ffd700;
+text-shadow:
+0 0 4px gold,
+0 0 8px orange;
+}
+100%{
+color:#ff2a2a;
+text-shadow:
+0 0 4px red,
+0 0 8px red;
+}
+}
+
+.subtitle{
+margin-top:12px;
+font-size:14px;
+letter-spacing:2px;
+color:#aaa;
+}
+
+/* BOX */
+.chart-wrapper{
+width:95%;
+max-width:700px;
+margin:auto;
+background:#0a0a0a;
+border:2px solid rgba(255,215,0,.4);
+border-radius:22px;
+overflow:hidden;
+}
+
+/* HEADING */
+.heading{
+text-align:center;
+padding:18px;
+font-size:30px;
+font-family:'Cinzel',serif;
+font-weight:bold;
+color:#ffd700;
+text-shadow:
+0 0 5px gold,
+0 0 10px orange;
+border-bottom:1px solid rgba(255,215,0,.2);
+}
+
+/* ROW */
+.row{
+display:flex;
+align-items:center;
+gap:12px;
+padding:14px;
+border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.row:last-child{
+border-bottom:none;
+}
+
+/* DATE */
+.date{
+width:60px;
+text-align:center;
+font-size:26px;
+font-weight:bold;
+color:#ff1a1a;
+text-shadow:
+0 0 4px red,
+0 0 8px darkred;
+}
+
+/* LINE */
+.line{
+width:2px;
+height:42px;
+background:linear-gradient(to bottom,gold,white,gold);
+}
+
+/* INPUT */
+.number-box{
+flex:1;
+height:50px;
+border-radius:12px;
+border:2px solid rgba(255,255,255,.5);
+background:#111;
+outline:none;
+color:#fff;
+font-size:22px;
+text-align:center;
+padding:10px;
+}
+
+.number-box:focus{
+border-color:gold;
+box-shadow:0 0 12px rgba(255,215,0,.4);
+}
+
+/* MOBILE */
+@media(max-width:480px){
+.title{
+font-size:34px;
+}
+
+.heading{
+font-size:24px;
+}
+
+.date{
+font-size:22px;
+width:50px;
+}
+}
+</style>
 
 </section>
 <div class="footer">
